@@ -1,0 +1,1005 @@
+#navbarNavAltMarkup{
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    justify-content: end;
+}
+
+.nav-link{
+    margin-right: 5rem;
+}
+
+#elemento-barra {
+    border: 3px solid #AE8341; /* Borde rojo de 2px */
+    border-radius: 0;      /* Bordes cuadrados (sin redondeo) */
+    padding: 5px;          /* Espacio interno para que el borde no toque el contenido */
+}
+
+.navbar-brand{
+    margin-left: 5rem;
+}
+
+.bg-body-tertiary{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
+
+.container-fluid{
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+#container1-cuerpo1 {
+    align-items: center;
+    height: 90vh;
+   background-size: 100% 90vh;
+   background-image: url('images/imagen1.jpg');
+    
+}
+#container1-descripcion1{
+align-items: center;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Roboto';
+     color: white;
+} 
+
+
+/* Contenedor padre */
+.container-wrapper {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Ajusta según tus necesidades */
+    overflow: hidden; /* Asegura que nada se salga del contenedor */
+}
+
+/* Estilo base para los contenedores */
+.container-cuerpo {
+    align-items: center !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out; /* Transición suave para opacidad */
+    opacity: 0; /* Inicialmente oculto */
+    z-index: 1; /* Todos los contenedores están en la misma capa */
+}
+
+/* Contenedor visible */
+.container-cuerpo.visible {
+    align-items: center !important;
+    opacity: 1;
+    z-index: 2; /* El contenedor visible está en una capa superior */
+}
+
+/* Ajuste de fondo */
+#container1-cuerpo1, #container2-cuerpo1, #container3-cuerpo1 {
+    display: flex;
+    align-items: center !important;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#container2-cuerpo1 {
+    align-items: center;
+    
+    height: 90vh;
+   background-size: 100% 90vh;
+   background-image: url('images/imagen2.jpg');
+    
+}
+#container2-descripcion1{
+
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Roboto';
+     color: white;
+} 
+
+
+
+#container3-cuerpo1 {
+    align-items: center;
+    height: 90vh;
+   background-size: 100% 90vh;
+   background-image: url('images/imagen3.jpg');
+    
+}
+#container3-descripcion1{
+    
+   
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Roboto';
+     color: white;
+} 
+
+/* Contenedor que envuelve ambos textos */
+.text-wrapper {
+    position: relative; /* Permite posicionar los elementos hijos de manera absoluta */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: 100%; /* Ajusta la altura según sea necesario */
+}
+
+/* Texto de fondo en rojo */
+.background-text {
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    width: 100%;
+    height: 100%;
+    color: rgba(216, 171, 36, 0.853); /* Color del texto de fondo */
+    font-size: 10rem; /* Tamaño del texto, ajusta según sea necesario */
+    font-weight: 400; /* Grosor del texto */
+    font-family: "Norican", cursive;
+    z-index: 1; /* Asegura que esté detrás del texto principal */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.112); /* Opcional: sombra para mejor visibilidad */
+    /* Alinea el texto dentro del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texto en primer plano en blanco */
+.foreground-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white; /* Color del texto en primer plano */
+    font-size: 5rem; /* Asegúrate de que coincida con el tamaño del texto de fondo */
+    font-weight: 800; /* Asegúrate de que coincida con el grosor del texto de fondo */
+    font-family: 'Roboto', sans-serif; /* Asegúrate de que coincida con la fuente del texto de fondo */
+    z-index: 2; /* Asegura que esté encima del texto de fondo */
+    /* Alinea el texto dentro del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Estilo para la imagen de WhatsApp */
+.whatsapp-icon {
+    position: fixed; /* Fija la posición respecto a la ventana del navegador */
+    bottom: 20px; /* Espacio desde la parte inferior */
+    left: 20px; /* Espacio desde el lado izquierdo */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+.whatsapp-icon img {
+    width: 8rem; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius:10%; /* Opcional: haz la imagen redonda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra */
+    cursor: pointer; /* Opcional: cambia el cursor para indicar que es clicable */
+}
+
+.whatsapp-icon img:hover {
+    opacity: 0.8; /* Opcional: agrega un efecto de hover */
+}
+
+
+
+#cuerpo2{
+    margin-top: 4rem;
+    align-items: end;
+    padding-right: 4REM;
+    padding-left: 4REM;
+    justify-content: center;
+    text-align: center;
+}
+
+#cuerpo2-contenedor1-d3{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2rem;
+}
+
+#cuerpo2-contenedor1-d1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5REM;
+}
+
+#cuerpo2-contenedor1{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#cuerpo2-contenedor2{
+    border: 8px solid #AE8341; /* Borde rojo de 2px */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#cuerpo2-contenedor3{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+
+
+#cuerpo2-contenedor1-d3-s1{
+    color: rgb(28, 28, 28);
+    line-height: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5REM;
+}
+
+#cuerpo2-contenedor1-d3-s1 img{
+    margin-right: 1rem;
+}
+
+#cuerpo2-contenedor1-d3-s2 img{
+    margin-right: 1rem;
+}
+
+.background-text2 {
+    font-family: "Marck Script", cursive;
+    position: absolute;
+    top: 1rem;
+    transform: scaley(1.5); 
+    font-size:6rem;
+    color: rgba(216, 171, 36, 0.559); /* Color del texto de fondo */
+    z-index: -1;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+#cuerpo2-contenedor1-d3-s2{
+    color: rgb(28, 28, 28);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5REM;
+}
+
+#cuerpo2-contenedor1-d4{
+    width: fit-content;
+    border: 4px solid #AE8341; /* Borde rojo de 2px */
+    border-radius: 0;      /* Bordes cuadrados (sin redondeo) */
+    padding: 20px;  
+    justify-content: center;
+    color: rgb(18, 17, 17);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5REM;
+}
+#cuerpo2-contenedor1-d5{
+    background-color: black;
+    width: fit-content;
+       /* Bordes cuadrados (sin redondeo) */
+    padding: 20px;  
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5REM;
+}
+
+
+
+
+
+
+
+
+#cuerpo3{
+    margin-top: 8rem;
+}
+
+
+#c3-descripcion1{
+  
+    width: fit-content;
+       /* Bordes cuadrados (sin redondeo) */
+
+    justify-content: center;
+    color:#AE8341;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1.5REM;
+}
+
+
+
+#c3-descripcion2{
+  
+    width: fit-content;
+
+    justify-content: center;
+    color:#ffffff;
+    font-size: 4rem;
+    font-weight: 700;
+   line-height: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4REM;
+}
+
+
+#c3-descripcions{
+    padding-top: 6rem;
+}
+
+#c3-descripcion3{
+  
+    width: fit-content;
+  text-align: start;
+    color:#ffffff;
+    font-size: 1.1rem;
+   
+  
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4REM;
+}
+
+
+
+#c3-descripcion{
+    padding-top: 4rem;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#botoncito1{
+    padding-bottom: 1REM;
+    padding-top: 1REM;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    padding-right: 2.5rem;
+     padding-left: 2.5rem;
+        border-radius: 0;
+        border: 5px solid #AE8341;
+        color: rgb(255, 255, 255) !important;
+        background: rgb(0, 0, 0);
+    
+}
+
+
+
+.background-text3 {
+ line-height: 3rem;
+    font-family: "Marck Script", cursive;
+    position: absolute;
+    left: 1rem;
+   top: 3rem;
+    transform: scaley(3); 
+    font-size:7rem;
+    color: rgba(216, 171, 36, 0.204); /* Color del texto de fondo */
+    white-space: nowrap;
+}
+
+
+
+.cuerpo4{
+    padding-top: 8rem;
+}
+
+
+
+#c4-c1-servicios{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    color: rgb(37, 36, 36);
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+#c4-contenedor1{
+    margin-bottom: 7rem;
+}
+
+
+
+
+
+.background-text4{
+ line-height: 3rem;
+    font-family: "Marck Script", cursive;
+    position: absolute;
+    
+     top: 6rem;
+    transform: scaley(3); 
+    font-size:5rem;
+    color: rgba(216, 171, 36, 0.93); /* Color del texto de fondo */
+    white-space: nowrap;
+}
+
+
+#c4-servicio1{
+    margin-top: 2rem;
+    padding:2rem ;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    background-image: url('images/servicio2.jpg');
+}
+
+#c4-servicio2{
+    margin-top: 2rem;
+    padding:2rem ;
+    background-size: 100% 100%;
+  
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    background-image: url('images/servicio3.jpg');
+}
+
+#c4-servicio3{
+    margin-top: 2rem;
+    padding:2rem ;
+    background-size: 100% 100%;
+    align-items: center;
+    display: flex;
+    background-image: url('images/servicio4.jpg');
+}
+
+#c4-servicio4{
+    margin-top: 2rem;
+    padding:2rem ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    background-image: url('images/servicio1.jpg');
+}
+
+#c4-servicio5{
+    margin-top: 2rem;
+    padding:2rem ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    background-image: url('images/servicio5.jpg');
+}
+
+#c4-s1-texto1{
+    background-color: rgba(0, 0, 0, 0.645);
+    width: fit-content;
+    border: 5px solid rgb(223, 165, 5) ;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5rem;
+}
+
+
+#row-listaproductos3{
+    padding-top: 11rem;
+}
+
+
+
+
+
+
+
+
+.cuerpo5{
+    margin-top: 12rem;
+}
+
+
+
+
+.background-text5{
+    line-height: 3rem;
+       font-family: "Marck Script", cursive;
+       position: absolute;
+        top: 1rem;
+       transform: scaley(1.5); 
+       font-size:7rem;
+       color: rgba(216, 171, 36, 0.711); /* Color del texto de fondo */
+       white-space: nowrap;
+       z-index: -1;
+   }
+
+
+   #c5-reseña1{
+    margin-top: 8rem;
+   }
+   
+
+   #c5-reseña2{
+    margin-top: 8rem;
+   }
+
+   #c5-reseña3{
+    margin-top: 8rem;
+   }
+
+   #c5-reseña4{
+    margin-top: 8rem;
+   }
+
+   #c5-reseña5{
+    margin-top: 8rem;
+   }
+
+   #c5-reseña{
+    color:black;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 2rem;
+   }
+
+
+   .carousel-item {
+    transition: transform 2s ease, opacity 1s ease-out; /* Cambia los valores según tus necesidades */
+  }
+
+   
+
+   #estrellas{
+ 
+    display: flex;
+    justify-content: center;
+   }
+
+   #c5-reseña-cliente{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color:black;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 2rem;
+   }
+   
+
+
+
+
+   .cuerpo6{
+    margin-top: 8rem;
+   }
+
+
+#c6-contenedor{
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('images/servicio1.jpg');
+}
+
+#c6-contenedor-d{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-color: rgba(0, 0, 0, 0.652);
+}
+
+
+#c6-contenedor-d1{
+    text-align: center;
+    line-height: 4rem;
+    font-weight: 700;
+   
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: white    ;
+}
+
+#c6-contenedor-d2{
+    font-style:oblique;
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    
+    color: white    ;
+}
+
+
+#cuerpo7{
+    padding-left: 2rem;
+    background-image: url('images/imagen1.jpg');
+    margin-top: 7rem;
+}
+
+
+#row-c7{
+    padding-left: 2rem;
+    background-color: rgba(27, 16, 4, 0.884);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#c7-inicio{
+    padding-top: 4rem;
+}
+
+
+
+
+#c7-titulo1{
+    
+    line-height: 4rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+
+#c7-i2-t2{
+    color: white;
+}
+
+#c7-footer{
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+
+#c7-titulo2{
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color:#AE8341
+}
+
+
+
+#c7-titulo3{
+    margin-top: 2rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color:#ffffff
+}
+
+
+
+
+#c7-i2-t1{
+    margin-top: 3rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+
+#c7-inicio2{
+    text-align: center;
+}
+
+#c7-dieñador{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+#cuerpo8{
+    margin-top: 4rem;
+  
+    padding-right: 4REM;
+    padding-left: 4REM;
+    justify-content: center;
+    text-align: center;
+}
+
+.container.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#c8-servicio {
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+   width: fit-content;
+    position: relative;
+}
+
+
+
+#c82-servicio {
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+   width: fit-content;
+    position: relative;
+}
+
+#c83-servicio {
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+   width: fit-content;
+    position: relative;
+}
+
+
+
+
+.container#c8-precio {
+    text-align: right;
+ /* Ajusta el ancho según tus necesidades */
+}
+
+
+#c8-contenedor1 {
+    border: 2px solid rgba(97, 97, 97, 0.188);
+    margin-right: 1rem;
+    box-shadow: 1px 1px 2px 2px rgba(84, 84, 84, 0.256); /* Sombra suave */
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+
+#c8-contenedor2 {
+    border: 2px solid rgba(97, 97, 97, 0.188);
+ 
+    box-shadow: 1px 1px 2px 2px rgba(84, 84, 84, 0.256); /* Sombra suave */
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+
+#c8-contenedor3 {
+    border: 2px solid rgba(97, 97, 97, 0.188);
+ 
+    box-shadow: 1px 1px 2px 2px rgba(84, 84, 84, 0.256); /* Sombra suave */
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+
+.text-white {
+    color: white !important;
+}
+
+/* Estilo cuando se pasa el cursor */
+.background-white {
+    background-size:  120% 100%;
+  background-image: url('images/precio1.jpg');
+   background-color: rgba(0, 0, 0, 0.689) !important;
+}
+
+
+.background-white2 {
+    background-size:  120% 100%;
+  background-image: url('images/precio2.jpg');
+   background-color: rgba(0, 0, 0, 0.689) !important;
+}
+
+
+
+.background-white3 {
+    background-size:  120% 100%;
+  background-image: url('images/precio3.jpg');
+   background-color: rgba(0, 0, 0, 0.689) !important;
+}
+
+
+
+
+
+
+#c8-precio{
+    width: fit-content;
+    font-weight: 700;
+    color: #AE8341;
+}
+
+#c82-precio{
+    width: fit-content;
+    font-weight: 700;
+    color: #AE8341;
+}
+
+
+#c83-precio{
+    width: fit-content;
+    font-weight: 700;
+    color: #AE8341;
+}
+
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.d-flex .service {
+    flex: 1;
+    white-space: nowrap; /* Prevents the text from breaking */
+}
+.d-flex #c8-puntos {
+    flex: 1;
+    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+    background-size: 10px 1px; /* Adjust the size of the dots */
+    background-repeat: repeat-x;
+    height: 1px; /* Adjust the height of the line */
+    margin: 0 10px; /* Spacing between service and price */
+}
+
+#c82-puntos {
+    flex: 1;
+    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+    background-size: 10px 1px; /* Adjust the size of the dots */
+    background-repeat: repeat-x;
+    height: 1px; /* Adjust the height of the line */
+    margin: 0 10px; /* Spacing between service and price */
+}
+
+#c83-puntos {
+    flex: 1;
+    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+    background-size: 10px 1px; /* Adjust the size of the dots */
+    background-repeat: repeat-x;
+    height: 1px; /* Adjust the height of the line */
+    margin: 0 10px; /* Spacing between service and price */
+}
+
+
+
+
+
+.c8-puntos-blancos {
+    flex: 1;
+    background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 50%, transparent 100%) !important;
+    background-size: 10px 1px; /* Adjust the size of the dots */
+    background-repeat: repeat-x;
+    height: 1px; /* Adjust the height of the line */
+    margin: 0 10px; /* Spacing between service and price */
+}
+
+.c83-puntos-blancos {
+    flex: 1;
+    background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 50%, transparent 100%) !important;
+    background-size: 10px 1px; /* Adjust the size of the dots */
+    background-repeat: repeat-x;
+    height: 1px; /* Adjust the height of the line */
+    margin: 0 10px; /* Spacing between service and price */
+}
+
+.c82-puntos-blancos {
+    flex: 1;
+    background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 50%, transparent 100%) !important;
+    background-size: 10px 1px; /* Adjust the size of the dots */
+    background-repeat: repeat-x;
+    height: 1px; /* Adjust the height of the line */
+    margin: 0 10px; /* Spacing between service and price */
+}
+
+.d-flex .price {
+    white-space: nowrap; /* Prevents the text from breaking */
+}
+
+
+#c8-c1-servicio{
+    margin-top: 2rem;
+}
+
+#c82-c1-servicio{
+    margin-top: 2rem;
+}
+
+
+#c83-c1-servicio{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    #container2-descripcion2{
+        font-size: 4rem !important;
+    }
+
+    #container1-descripcion2{
+        font-size: 4rem !important;
+    }
+
+    #container3-descripcion2{
+        line-height: 1rem;
+        font-size: 2.5rem !important;
+    }
+    
+
+
+    .background-text{
+        left: 0rem;
+    }
+#container1-descripcion1{
+   text-align: center;
+    font-size: 2rem;
+}
+    
+    
+#container1-cuerpo1{
+  background-repeat: no-repeat;
+   background-size:120% 80vh;
+}
+
+
+.whatsapp-icon img{
+   
+    width: 6rem;
+
+    
+}
+
+
+.whatsapp-icon {
+    left: 0;
+}
+
+#container2-descripcion1{
+    text-align: center;
+    font-size: 2rem;
+}
+#container2-cuerpo1{
+    background-repeat: no-repeat;
+     background-size: 120% 80vh;
+  }
+  
+
+
+#container3-descripcion1{
+    text-align: center;
+    font-size: 2rem;
+}
+#container3-cuerpo1{
+    background-repeat: no-repeat;
+     background-size: 120% 80vh;
+  }
+  
+    
+   .navbar-brand{
+    margin-left: 0rem !important;
+
+   }
+
+    #elemento-barra{
+        border: 0;
+    }
+
+
+}
