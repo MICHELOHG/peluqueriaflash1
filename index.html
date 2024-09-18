@@ -3,861 +3,519 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peluqueria Flash</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Peluquería Flash</title>
     <link rel="stylesheet" href="Style.css">
-   
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Norican&family=Qwigley&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""> Peluqueria Flash</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    
+<div class="container-fluid" id="contenedor1">
+
+  <div id="whatsapp">
+    <a href="https://wa.me/1234567890" target="_blank" title="Contacta por WhatsApp">
+        <img src="images/whattsap.png" width="30px" alt="">
+    </a>
+</div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="barra-navegador">
+        <div class="container-fluid" id="barra-navegador-fondo">
+          <a class="navbar-brand" id="titulo-barra" href="#">Peluquería Flash</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" id="elemento-barra" aria-current="page" href="#">Home</a>
-              <a class="nav-link active" aria-current="page" href="#">Servicios</a>
-              <a class="nav-link active" aria-current="page" href="#">Tienda</a>
-              <a class="nav-link active" aria-current="page" href="#">Estilos</a>
-              <a class="nav-link active" id="elemento-barra" aria-current="page" href="#">Contacto</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link" id="opciones-barra" href="#">Home</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link" id="opciones-barra2" href="#">Servicios</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" id="opciones-barra3" href="#">Estilos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="opciones-barra3" href="#">Contacto</a>
+              </li>
+             
+            </ul>
+           
           </div>
         </div>
     </nav>
 
-    <div class="container-fluid" id="cuerpo1">
-      <div class="container-wrapper">
-        <div class="container-fluid " id="container1-cuerpo1">
-          <div class="text-wrapper">
-            <div class="container background-text " id="container1-descripcion2">
-             Bienvenido
-          </div>
-        <div class="container foreground-text" id="container1-descripcion1">
-            Peluqueria Flash
-        </div>
+    <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicadores (los puntos) -->
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1"></button>
       </div>
-        </div>
-        
+  
+      <!-- Contenido del carrusel -->
+      <div class="carousel-inner">
+          <!-- Primera diapositiva -->
+          <div class="carousel-item active">
+              <div class="container-fluid" id="cuerpo1">
+                  <div class="row col-7 col-md-6" id="cuerpo1-texto">
+                    <div class="container" id="cuerpo1-texto2">
+                      En Peluquería Flash
+                  </div>
+                      <div class="container" id="cuerpo1-texto1">
+                          Verse Genial cuesta tan poco
+                      </div>
+
+                      <div class="container" id="cuerpo1-texto3">
+                        Haz que tu peinado sea una parte importante de la expresión de tu identidad
+                    </div>
+                      <div class="container" id="contenedor-boton">
+                          <button type="button" class="btn btn-warning" id="boton1">Servicios</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Segunda diapositiva -->
+          <div class="carousel-item">
+              <div class="container-fluid" id="cuerpo1a">
+                  <div class="row col-7 col-md-6" id="cuerpo1-texto">
+                    <div class="container" id="cuerpo1a-oferta1">
+                      <img src="images/oferta.png" alt="">
+                    </div>
+                      <div class="container" id="cuerpo1-texto1">
+                      TRATAMIENTO CON CELULAS MADRE
+                      </div>
+                      <div class="container" id="cuerpo1-texto3">
+                       El verano ha sido duro, dale a tu cabello la fortaleza que necesita, con uno de nuestros mejores productos.
+                    </div>
+
+                     
+                      <div class="container" id="contenedor-boton">
+                          <button type="button" class="btn btn-warning" id="boton1">Más Info</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+
+<div class="contenedor-fluid" id="acercadenosotros">
+  <div class="container-fluid" id="cuerpo2">
 
 
-        <div class="container-fluid" id="container2-cuerpo1">
-          <div class="text-wrapper">
-            <div class="container background-text " id="container2-descripcion2">
-              Consultanos
-          </div>
-        <div class="container foreground-text" id="container2-descripcion1">
-            Elige tu Estilo
-        </div>
+    <div class="container-fluid col-md-6 offset-1" id="cuerpo2-texto">
+      <div class="container-fluid" id="cuerpo2-texto1">
+        Peluqueria Flash
       </div>
-            </div>
-            <div class="container-fluid" id="container3-cuerpo1">
-              <div class="text-wrapper">
-                <div class="container background-text " id="container3-descripcion2">
-                 Lo mejor para ti
-              </div>
-            <div class="container foreground-text" id="container2-descripcion1">
-                Productos 100% de Calidad
-            </div>
-          </div>
-              </div>
+
+      <div class="container-fluid" id="cuerpo2-texto2">
+       Madrid - 2009
+      </div>
+
+      <div class="container-fluid" id="cuerpo2-texto3">
+        En nuestra peluquería, ubicada en el corazón del barrio de Las Águilas, nos destacamos por brindar un servicio excepcional, enfocado en resaltar tu estilo y personalidad. Nuestro equipo de profesionales está comprometido con ofrecerte una experiencia personalizada y de calidad en cada visita.
+      </div>
+
+<div class="container" id="boton-c2">
+
+      <button type="button" class="btn btn-warning" id="boton1">Servicios</button>
     </div>
-
-
-
-    <div class="row" id="cuerpo2">
-      <div class="container col-xl-4" id="cuerpo2-contenedor1">
-        <div class="container position-relative" id="cuerpo2-contenedor1-d1">
-          <span class="background-text2">Horario</span>
-          HORARIO DE TRABAJO:
-        </div>
-        <div class="container d-flex" id="cuerpo2-contenedor1-d3">
-          <div class="container" id="cuerpo2-contenedor1-d3-s">
-            <div class="container" id="cuerpo2-contenedor1-d3-s1">
-            LUNES A VIERNES 10:00 - 20:00
-            </div>
-            <div class="container" id="cuerpo2-contenedor1-d3-s2">
-            SABADOS Y DOMINGO 10:00 - 15:00
-            </div>
-          </div>
-        </div>
-
-        <div class="container d-flex" id="cuerpo2-contenedor1-d3">
-         
-          <div class="container" id="cuerpo2-contenedor1-d3-s">
-            <div class="container" id="cuerpo2-contenedor1-d3-s1">
-            CALLE JOSE DE CADALSO 24 BAJOC
-            </div>
-            <div class="container" id="cuerpo2-contenedor1-d3-s2">
-            MADRID 28044 - MADRID ESPAÑA
-            </div>
-          </div>
-        </div>
-
-
-        <div class="container d-flex" id="cuerpo2-contenedor1-d4">
-          COMO LLEGAR
-        </div>  
-
-      </div>
-      
-      <div class="container col-xl-4" id="cuerpo2-contenedor2">
-        <div class="container position-relative" id="cuerpo2-contenedor1-d1">
-          <span class="background-text2">Contacto</span>
-          Llamanos
-        </div>
-        <div class="container d-flex" id="cuerpo2-contenedor1-d3">
-        
-          <div class="container" id="cuerpo2-contenedor1-d3-s">
-            <div class="container" id="cuerpo2-contenedor1-d3-s1">
-              <img src="images/telefono.png" width="25px" alt="">
-           (+34)  91780123123
-            </div>
-            <div class="container" id="cuerpo2-contenedor1-d3-s2">
-            91780321321
-            </div>
-          </div>
-        </div>
-
-        <div class="container d-flex" id="cuerpo2-contenedor1-d3">
-          <div class="container" id="cuerpo2-contenedor1-d3-s">
-            <div class="container" id="cuerpo2-contenedor1-d3-s1">
-              <img src="images/whattsap.png"  width="25px" alt="">
-            (+34) 623456789
-            </div>
-            <div class="container" id="cuerpo2-contenedor1-d3-s2">
-            612345678
-            </div>
-          </div>
-        </div>
-
-
-        <div class="container d-flex" id="cuerpo2-contenedor1-d5">
-          LLAMAR
-        </div>  
-
-
-      </div>
-      
-
-      <div class="container col-xl-4" id="cuerpo2-contenedor3">
-        <div class="container position-relative" id="cuerpo2-contenedor1-d1">
-          <span class="background-text2">Citas</span>
-          Si lo prefieres solicita una cita
-        </div>
-        <div class="container d-flex" id="cuerpo2-contenedor1-d3">
-          <div class="container" id="cuerpo2-contenedor1-d3-s">
-            <div class="container" id="cuerpo2-contenedor1-d3-s1">
-              
-            GESTIONA TU CITA
-            </div>
-         
-          </div>
-        </div>
-
-        <div class="container d-flex" id="cuerpo2-contenedor1-d4">
-          RESERVAR CITA
-        </div>  
+    </div>
+  </div>
   
 
-      </div>
-      
+   
+</div>
+
+
+<div class="container-fluid" id="servicios">
+  <div class="container-fluid" id="servicios-titulo">
+    <span id="servicios-titulo1"> Nuestros</span> <span id="servicios-titulo2">Servicios</span>
+  </div>
+
+<div class="row" id="servicio1">
+  <div class="container-fluid col-md-5 offset-1" id="servicio1-texto">
+    <div class="container-fluid" id="servicio1-texto1">
+      <span id="servicios-texto1-1"> Balayage</span>
+      <span id="servicios-texto1-2">- Color</span>
+    </div>
+    <div class="container-fluid" id="servicio1-texto2">
+    Clásicas, en contraste, completo y en cabello oscuro.
     </div>
 
+    <div class="container-fluid" id="servicio1-texto3">
+      El balayage es una técnica de coloración francesa que toma su nombre del verbo "balayer" que significa barrer. La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como aclarado por el sol, con tonos más claros en las puntas.
+    </div>
+    
+    </div>
+ 
+    
+ 
+  <div class="container-fluid col-md-6" id="servicio1-imagen">
+  <img src="images/imagen4.png" alt="">
+  </div>
+</div>
 
 
-    <div class="container-fluid" id="cuerpo3">
-   
-      <div class="row " id="c3-descripcion">
+<div class="row" id="servicio2">
+  <div class="container-fluid col-md-6 order-md-2 order-2 " id="servicio1-imagen">
+    <img src="images/imagen5.png" alt="">
+    </div>
+  <div class="container-fluid col-md-5 offset-1 order-md-2 order-1" id="servicio1-texto">
+    <div class="container-fluid" id="servicio1-texto1">
+      <span id="servicios-texto1-1"> Corte Cabello</span>
+      <span id="servicios-texto1-2"> Mujeres</span>
+    </div>
+    <div class="container-fluid" id="servicio1-texto2">
+    Clásicas, en contraste, completo y en cabello oscuro.
+    </div>
+
+    <div class="container-fluid" id="servicio1-texto3">
+      El balayage es una técnica de coloración francesa que toma su nombre del verbo "balayer" que significa barrer. La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como aclarado por el sol, con tonos más claros en las puntas.
+    </div>
+    
+    </div>
+ 
+    
+ 
+  
+</div>
+
+
+<div class="row" id="servicio3">
+  <div class="container-fluid col-md-5 offset-1" id="servicio1-texto">
+    <div class="container-fluid" id="servicio1-texto1">
+      <span id="servicios-texto1-1"> Peinados</span>
+      <span id="servicios-texto1-2"> Fiesta</span>
+    </div>
+    <div class="container-fluid" id="servicio1-texto2">
+    Clásicas, en contraste, completo y en cabello oscuro.
+    </div>
+
+    <div class="container-fluid" id="servicio1-texto3">
+      El balayage es una técnica de coloración francesa que toma su nombre del verbo "balayer" que significa barrer. La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como aclarado por el sol, con tonos más claros en las puntas.
+    </div>
+    
+    </div>
+ 
+    
+ 
+  <div class="container-fluid col-md-6" id="servicio1-imagen">
+  <img src="images/imagen6.png" alt="">
+  </div>
+</div>
+
+
+
+<div class="row" id="servicio4">
+  <div class="container-fluid col-md-6  order-md-1 order-2" id="servicio1-imagen">
+    <img src="images/imagen7.png" alt="">
+    </div>
+  <div class="container-fluid col-md-5 offset-1  order-md-2 order-1" id="servicio1-texto">
+    <div class="container-fluid" id="servicio1-texto1">
+      <span id="servicios-texto1-1"> Corte Cabello</span>
+      <span id="servicios-texto1-2"> Hombres</span>
+    </div>
+    <div class="container-fluid" id="servicio1-texto2">
+    Clásicas, en contraste, completo y en cabello oscuro.
+    </div>
+
+    <div class="container-fluid" id="servicio1-texto3">
+      El balayage es una técnica de coloración francesa que toma su nombre del verbo "balayer" que significa barrer. La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como aclarado por el sol, con tonos más claros en las puntas.
+    </div>
+    
+    </div>
+ 
+    
+ 
+  
+</div>
+
+
+</div>
+
+<div class="container-fluid" id="precios">
+  <div class="container-fluid" id="servicios-titulo">
+    <span id="servicios-titulo1"> Nuestros</span> <span id="servicios-titulo2">Precios</span>
+  </div>
+
+<div class="row col-md-12" id="precios-imagenes">
+  <img src="images/imagen14.png"  alt="">
+  <img src="images/imagen15.png"  alt="">
+  <img src="images/imagen14.png"  alt="">
+  
+</div>
+
+<div class="row" id="precios-contenedor1">
+  <div class="col-md-4 offset-md-2">
+    <div class="row">
+      <div class="container" >
+        <div class="service-item">
+          <span class="service-name"><strong>Corte de cabello (hombres)</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 20 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Corte de cabello (mujeres)</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 40 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Peinado</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 30 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Tinte de cabello</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 60 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Mechas/Balayage</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 150 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Alisado permanente</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 180 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Tratamiento de keratina</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 150 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Corte infantil</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 12 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Recogido para eventos</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 80 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Tratamiento hidratante (mascarilla)</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 30 €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 offset-md-1">
+    <div class="row">
+      <div class="container">
+        <div class="service-item">
+          <span class="service-name"><strong>Corte de cabello (hombres)</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 20 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Corte de cabello (mujeres)</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 40 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Peinado</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 30 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Tinte de cabello</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 60 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Mechas/Balayage</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 150 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Alisado permanente</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 180 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Tratamiento de keratina</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 150 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Corte infantil</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 12 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Recogido para eventos</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 80 €</span>
+        </div>
+        <div class="service-item">
+          <span class="service-name"><strong>Tratamiento hidratante (mascarilla)</strong></span>
+          <span class="service-dots"></span>
+          <span class="service-price">Desde 30 €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="container-fluid" id="tratamiento">
+  <div class="row" id="tramiento-cuerpo">
+  <div class="container-fluid col-md-5" id="tramiento-descripcion">
+
+    <div class="container" id="cuerpo1a-oferta">
+      <img src="images/oferta.png" alt="">
+    </div>
+
+    <div class="container" id="tratamiento-descripcion-imagen">
+      <img src="images/imagen12.png" alt="">
+    </div>
+    
+    
+  </div>
+
+  <div class="container-fluid col-md-7" id="tramiento-descripcion2">
+    <div class="container" id="cuerpo1-texto2">
+     Peluquería Flash te ofrece 
+  </div>
+    <div class="container" id="tratamiento-d-titulo">
+      Tramiento reparacion con celulas madre
+    </div>
+    <div class="container" id="tratamiento-d-titulo4">
+      Lendan Ultra Repair Recovery
+    </div>
+
+    <div class="container" id="tratamiento-d-titulo1">
+     Este tratamiento repara y nutre el cabello en profundidad gracias a su formulación con provitamina B5 y vitamina E. Los resultados se observan desde la primera aplicación. Su eficacia es de larga duración con los efectos visibles hasta después de 10 lavados. Es ideal para recuperar cabellos castigados o muy dañados que necesiten mejorar su apariencia y su salud. 
+    </div>
+    <div class="container" id="tratamiento-d-titulo2">
+      Ven a Nuestra Peluquería y pruebalo!
+    </div>
+
+  
+  </div>  
+</div>
+</div>  
+
+
+<div class="container-fluid" id="contactanos">
+  <div class="container-fluid" id="contactanos-cuerpo">
+    <div class="container" id="contactanos-cuerpo-titulo">
+      <div class="container" id="contactanos-cuerpo-titulo-p">
+      <span id="contactanos-cuerpo-titulo1">Información </span>
+      <span id="contactanos-cuerpo-titulo2">- Horarios </span>
+      </div>
+
+      <div class="container" id="contactanos-cuerpo-titulo-d">
+        <span id="contactanos-cuerpo-titulo-d">Reserva una cita con nosotros. </span>
+      
+        </div>
+
+    </div>
+
+    <div class="row" id="contactanos-info">
+      <div class="container-fluid col-md-3" id="telefono">
+        <div class="container" id="telefono-imagen">
+          <img src="images/telefono.png"  alt="">
+        </div>
+        <div class="container" id="telefono-titulo">
+          Teléfonos
+        </div>
+
+        <div class="container" id="telefono-descripcion">
+          +34 <span id="telefono-descripcion1">  635857587</span>
+        </div>
+       
+        <div class="container" id="telefono-descripcion">
+          +34 <span id="telefono-descripcion1">  917066454</span>
+        </div>
+       
+       
+
+
+        </div>
         
-        <div class="row col-md-12">
+
+
+        <div class="container-fluid col-md-3" id="horario">
+          <div class="container" id="telefono-imagen">
+            <img src="images/horario.png"  alt="">
+          </div>
+          <div class="container" id="telefono-titulo">
+            Horario
+          </div>
+  
+          <div class="container" id="horario-descripcion">
+            LUNES 9:30 - 19:00
+          </div>
+
+          <div class="container" id="horario-descripcion">
           
-          <div class="container-fluid position-relative col-md-6" id="c3-descripcions">
+            MARTES Y SABADO 9:30 - 14:00
+          </div>
          
-            <div class="container-fluid">
-              <span class="background-text3">Conoce nuestro salon</span>
-              <span id="c3-descripcion1">MADRID - 2009</span>
+          <div class="container" id="horario-descripcion">
+             MIERCOLES - VIERNES 9:30 - 19:00
+          </div>
+         
+  
+  
+          </div>  
+      
+
+
+    
+          <div class="container-fluid col-md-3" id="ubicacion">
+            <div class="container" id="telefono-imagen">
+              <img src="images/ubiacion.png"  alt="">
+            </div>
+            <div class="container" id="telefono-titulo">
+            Ubicacion  
+            </div>
+    
+            <div class="container" id="ubicacion-descripcion">
+              C. de Blas Cabrera, 125, Latina 
+            </div>
+
+            <div class="container" id="ubicacion-descripcion">
+              28044 MADRID
+           </div>
+  
+            <div class="container" id="ubicacion-llegar">
+              <a href="https://maps.app.goo.gl/7f5Zcx2HsuELvVzM6" target="_blank">
+                <img src="images/llegar.png" width="10px" alt="Imagen del Negocio">
+                <span id="ubicacion-llegar-t"> COMO LLEGAR</span>
+            </a>
             </div>
            
-            <div class="container-fluid  mt-4" id="c3-descripcion2">
-              
-              
-Somos Peluqueria Flash             </div>
-          
-            <div class="container-fluid mt-4" id="c3-contenedor5-informacion">
-              
-            <div class="container mt-4" id="c3-contenedor5-info">
-              <button type="button" class="btn btn-primary me-4" id="botoncito1">LEER MÁS</button>
-            </div>
-     
-            </div>
-          </div>
-          <div class="container-fluid col-md-4" id="c3-contenedor5-image">
-            <div class="container-fluid mt-4" id="c3-descripcion3">
-              En el barrio de Las Águilas, en Madrid, está "Peluquería Flash", un salón conocido por su excelente servicio y atención al detalle. Marta, la dueña, es una peluquera apasionada que ha dedicado su vida a perfeccionar su oficio, siempre buscando ofrecer lo mejor a sus clientas.
 
-              En "Peluquería Flash", Marta y su equipo se destacan por su profesionalismo y habilidad. Cada clienta que entra es recibida con amabilidad y sale con un corte o peinado que refleja exactamente lo que deseaba. La reputación de Marta en el barrio se basa en la calidad de su trabajo y en el ambiente acogedor que ha creado en su salón.
-              
-              Gracias a su dedicación, "Peluquería Flash" se ha convertido en un lugar de confianza para muchas personas en Las Águilas, que saben que pueden contar con Marta para un resultado impecable y una experiencia agradable.
-            </div>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-
-
-    <div class="cuerpo4">
-  
-      <div class="container-fluid" id="c4-contenedor1">
+           
     
-        <div class="container position-relative mt-4 mb-4" id="c4-c1-servicios" >
-          <span class="background-text4">Verse mejor es sentirse mejor</span>
-           Nuestros Servicios
-         
-        </div>
-       
-
-<div class="row" id="row-listaproductos3">
-  <div class="container-fluid col-md-5" id="c4-servicio1">
-    <div class="container" id="c4-s1-texto1">
-Servicio Especiall 1
+    
+            </div> 
     </div>
   </div>
-
-  <div class="container-fluid col-md-5" id="c4-servicio2">
-    <div class="container" id="c4-s1-texto1">
-      Servicio Especiall 1
-          </div>
   </div>
-
-  <div class="container-fluid col-md-5" id="c4-servicio3">
-    <div class="container" id="c4-s1-texto1">
-Servicio Especiall 1
-    </div>
-  </div>
-
-
-  <div class="container-fluid col-md-5" id="c4-servicio4">
-    <div class="container" id="c4-s1-texto1">
-Servicio Especiall 1
-    </div>
-  </div>
-
-  <div class="container-fluid col-md-5" id="c4-servicio5">
-    <div class="container" id="c4-s1-texto1">
-Servicio Especiall 1
-    </div>
-  </div>
- 
-</div>
-
-
-
-
-
-    
-      </div>  
-
-    </div>
-    
-
-    <div class="row" id="cuerpo8">
-      
-      <div class="container col-xl-4" id="c8-contenedor1">
-    
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container col-md-6" id="c8-servicio">
-              Tinte de cabello completo
-          </div>
-          <div class="container" id="c8-puntos">
-              
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 60€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Mechas o balayage
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 80€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Tratamiento de keratina
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 90€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Peinado para eventos
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 50€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Afeitado de barba & diseño
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 25€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Lavado y secado
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 20€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Alisado con plancha
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 40€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Cortes para niños
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 25€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c8-c1-servicio">
-          <div class="container" id="c8-servicio">
-              Tratamiento de hidratación
-          </div>
-          <div class="container" id="c8-puntos">
-              .
-          </div>
-          <div class="container" id="c8-precio">
-              Desde 45€
-          </div>
-      </div>
-      
-
-         
-       
-    
-
-      </div>
-      
-
-      <div class="container col-xl-4" id="c8-contenedor2">
-    
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container col-md-6" id="c82-servicio">
-                Tinte de cabello completo
-            </div>
-            <div class="container" id="c82-puntos">
-                
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 60€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Mechas o balayage
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 80€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Tratamiento de keratina
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 90€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Peinado para eventos
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 50€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Afeitado de barba & diseño
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 25€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Lavado y secado
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 20€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Alisado con plancha
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 40€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Cortes para niños
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 25€
-            </div>
-        </div>
-        
-        <div class="container d-flex" id="c82-c1-servicio">
-            <div class="container" id="c82-servicio">
-                Tratamiento de hidratación
-            </div>
-            <div class="container" id="c82-puntos">
-                .
-            </div>
-            <div class="container" id="c82-precio">
-                Desde 45€
-            </div>
-        </div>
-        
-    </div>
-    
-
-    <div class="container col-xl-4" id="c8-contenedor3">
-    
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container col-md-6" id="c83-servicio">
-              Tinte de cabello completo
-          </div>
-          <div class="container" id="c83-puntos">
-              
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 60€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Mechas o balayage
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 80€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Tratamiento de keratina
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 90€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Peinado para eventos
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 50€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Afeitado de barba & diseño
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 25€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Lavado y secado
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 20€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Alisado con plancha
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 40€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Cortes para niños
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 25€
-          </div>
-      </div>
-      
-      <div class="container d-flex" id="c83-c1-servicio">
-          <div class="container" id="c83-servicio">
-              Tratamiento de hidratación
-          </div>
-          <div class="container" id="c83-puntos">
-              .
-          </div>
-          <div class="container" id="c83-precio">
-              Desde 45€
-          </div>
-      </div>
-      
-  </div>
-  
-    </div>
-
-
-    <div class="cuerpo5">
-
-      <div class="container position-relative mt-4 mb-4" id="c4-c1-servicios" >
-        
-         Nuestra Reseñas
-         <span class="background-text5">Reseñas</span>
-      </div>
-
-
-      
-
-      <div class="c5-reseñas">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-      
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="300">
-              <div class="reseña" id="c5-reseña5">
-                <div class="container" id="estrellas">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                </div>
-        
-                <div class="container col-md-5" id="c5-reseña">
-                  ¡No puedo recomendar Peluquería Flash lo suficiente! Desde que entré, el ambiente acogedor y profesional me hizo sentir como en casa. Marta y su equipo son verdaderos artistas: escuchan atentamente, ofrecen consejos expertos y siempre logran que salgas con un corte o estilo impresionante. La calidad del servicio es impecable y el trato es siempre amable y atento. ¡Sin duda, mi lugar favorito para el cuidado del cabello en Las Águilas! Gracias por hacer que cada visita sea una experiencia fantástica. 
-                </div>
-        
-                
-                <div class="container col-md-5" id="c5-reseña-cliente">
-                Max Power5
-                </div>
-              </div>   
-                      
-            </div>
-            <div class="carousel-item" data-bs-interval="300">
-              <div class="reseña" id="c5-reseña5">
-                <div class="container" id="estrellas">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                </div>
-        
-                <div class="container col-md-5" id="c5-reseña">
-                  ¡No puedo recomendar Peluquería Flash lo suficiente! Desde que entré, el ambiente acogedor y profesional me hizo sentir como en casa. Marta y su equipo son verdaderos artistas: escuchan atentamente, ofrecen consejos expertos y siempre logran que salgas con un corte o estilo impresionante. La calidad del servicio es impecable y el trato es siempre amable y atento. ¡Sin duda, mi lugar favorito para el cuidado del cabello en Las Águilas! Gracias por hacer que cada visita sea una experiencia fantástica. 
-                </div>
-        
-                
-                <div class="container col-md-5" id="c5-reseña-cliente">
-                Max Power5
-                </div>
-              </div>   
-                     
-            </div>
-            <div class="carousel-item">
-              <div class="reseña" id="c5-reseña5">
-                <div class="container" id="estrellas">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                  <img src="images/estrella.png" height="50rem" alt="">
-                </div>
-        
-                <div class="container col-md-5" id="c5-reseña">
-                  ¡No puedo recomendar Peluquería Flash lo suficiente! Desde que entré, el ambiente acogedor y profesional me hizo sentir como en casa. Marta y su equipo son verdaderos artistas: escuchan atentamente, ofrecen consejos expertos y siempre logran que salgas con un corte o estilo impresionante. La calidad del servicio es impecable y el trato es siempre amable y atento. ¡Sin duda, mi lugar favorito para el cuidado del cabello en Las Águilas! Gracias por hacer que cada visita sea una experiencia fantástica. 
-                </div>
-        
-                
-                <div class="container col-md-5" id="c5-reseña-cliente">
-                Max Power5
-                </div>
-              </div>   
-                    
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </div>
-
-
-    
-
-
-      
-
-
-    </div>
-
-
-    <div class="cuerpo6">
-      <div class="row" id="c6-contenedor">
-          <div class="container col-md-10" id="c6-contenedor-d">
-              <div class="container">
-            
-                <div class="container" id="c6-contenedor-d1">
-                  <span id="percentage">Escribeme y consulta sobre nuestros servicios</span>
-                </div>
-  
-                <div class="container" id="c6-contenedor-d2">
-                  LLamanos al +34 689658755
-                </div>
-      
-            
-              </div>
-          </div>
-      
-        
-  
-  
-  
-  
-      </div>
-  
-    </div>  
-  
-
-
-    <div class="container-fluid" id="cuerpo7">
-
-    <div class="row" id="row-c7">
-    <div class="col-md-6"  id="c7-inicio">
-        <div class="container-fluid" id="c7-titulo1">
-            Peluqueria Flash 
-         </div>  
-
-         <div class="container-fluid" id="c7-titulo2">
-          Estilos para ti 
-       </div>  
-  
-          
-  
-              <div class="container-fluid" id="c7-titulo3">
-             
-Descubre la experiencia que Peluquería Flash tiene para ofrecerte. Nuestro equipo de estilistas expertos está aquí para brindarte un servicio personalizado en un ambiente moderno y acogedor. Desde cortes de tendencia hasta tratamientos capilares innovadores, nos aseguramos de que cada detalle esté cuidadosamente diseñado para realzar tu estilo y hacerte sentir como la mejor versión de ti mismo. Ven y experimenta el arte de la transformación con nosotros, donde cada sesión es una promesa de calidad y satisfacción.
-              </div>
-  
-        
-  
-  
-  
-  
-  
-  
-   
-  
-    </div>
-
-
-    <div class="col-md-3"  id="c7-inicio2">
-      <div class="container-fluid" id="c7-i2-t1">
-          Home
-       </div>  
-
-       <div class="container-fluid" id="c7-i2-t1">
-       Servicios
-     </div>  
-     <div class="container-fluid" id="c7-i2-t1">
-      Home
-   </div>  
-
-   <div class="container-fluid" id="c7-i2-t1">
-   Servicios
- </div>  
- <div class="container-fluid" id="c7-i2-t1">
-  Home
-</div>  
-
-<div class="container-fluid" id="c7-i2-t1">
-Servicios
-</div>  
-
-
-
-  
-
-
- 
-
- 
- 
-
-  </div>
-
-  <div class="col-md-3"  id="c7-inicio3">
-    <div class="container-fluid" id="c7-i2-t1">
-        CONTACTANOS
-     </div>  
-
-
-     <div class="container d-flex" id="c7-footer">
-      <div class="container col-3" id="imagen1">
-        <img src="images/posicion.png" width="100%" alt="">
-      </div>
-     <div class="container-fluid" id="c7-i2-t2">
-     <span> Mercado las Aguilas local C</span> <br>  
-     <span> 28044 - MADRID </span>
-    </div>
-   </div>  
-
-
-   <div class="container d-flex" id="c7-footer">
-      <div class="container col-3" id="imagen1">
-        <img src="images/HORARIO.png" width="100%" alt="">
-      </div>
-     <div class="container-fluid" id="c7-i2-t2">
-     <span> LUNES - DOMINGO </span> <br>  
-     <span> 10:00 - 16:00</span>
-    </div>
-   </div>  
-
-
-   <div class="container d-flex" id="c7-footer"> 
-    <div class="container col-3" id="imagen1">
-      <img src="images/telefono.png" width="100%" alt="">
-    </div>
-   <div class="container-fluid" id="c7-i2-t2">
-   <span> 917802155</span> <br>  
-   <span> 638547856 </span>
-  </div>
- </div>  
-
-
-
-
-
-
-
 
 
 
@@ -865,31 +523,15 @@ Servicios
 
 </div>
 
-  
-<div class="container" id="c7-dieñador">
-  <img src="images/copyright.png" width="2%" alt="">
-   <span>Created by MICHELO all rights Reserved. 2024</span>
-  
-   
-</div>  
-    
-  </div>
-  
-  
-  
-  
-   </div> 
+
+
   
 
 
 
 
-    <script src="Script.js"></script>
+<script src="Script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <div class="whatsapp-icon">
-      <img src="images/whattsap.png" alt="WhatsApp" />
-  </div>
-   
-</body>    
+</body>
 </html>

@@ -1,922 +1,64 @@
-#navbarNavAltMarkup{
-    text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    justify-content: end;
-}
-
-.nav-link{
-    margin-right: 5rem;
-}
-
-#elemento-barra {
-    border: 3px solid #AE8341; /* Borde rojo de 2px */
-    border-radius: 0;      /* Bordes cuadrados (sin redondeo) */
-    padding: 5px;          /* Espacio interno para que el borde no toque el contenido */
-}
-
-.navbar-brand{
-    margin-left: 5rem;
-}
-
-.bg-body-tertiary{
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-}
-
-
-
-.container-fluid{
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-}
-
-#container1-cuerpo1 {
-    align-items: center;
-    height: 90vh;
-   background-size: 100% 90vh;
-   background-image: url('images/imagen1.jpg');
-    
-}
-#container1-descripcion1{
-align-items: center;
-    font-size: 5rem;
-    font-weight: 800;
-    font-family: 'Roboto';
-     color: white;
-} 
-
-
-/* Contenedor padre */
-.container-wrapper {
-    align-items: center;
+#contenedor1{
     position: relative;
     width: 100%;
-    height: 90vh; /* Ajusta según tus necesidades */
-    overflow: hidden; /* Asegura que nada se salga del contenedor */
-}
+    height:auto;
+    background-size: 100% 100%;
+    overflow: hidden;
+    color: white;
 
-/* Estilo base para los contenedores */
-.container-cuerpo {
-    align-items: center !important;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s ease-in-out; /* Transición suave para opacidad */
-    opacity: 0; /* Inicialmente oculto */
-    z-index: 1; /* Todos los contenedores están en la misma capa */
-}
-
-/* Contenedor visible */
-.container-cuerpo.visible {
-    align-items: center !important;
-    opacity: 1;
-    z-index: 2; /* El contenedor visible está en una capa superior */
-}
-
-/* Ajuste de fondo */
-#container1-cuerpo1, #container2-cuerpo1, #container3-cuerpo1 {
-    display: flex;
-    align-items: center !important;
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-
-#container2-cuerpo1 {
-    align-items: center;
-    
-    height: 90vh;
-   background-size: 100% 90vh;
-   background-image: url('images/imagen2.jpg');
-    
-}
-#container2-descripcion1{
-
-    font-size: 5rem;
-    font-weight: 800;
-    font-family: 'Roboto';
-     color: white;
-} 
-
-
-
-#container3-cuerpo1 {
-    align-items: center;
-    height: 90vh;
-   background-size: 100% 90vh;
-   background-image: url('images/imagen3.jpg');
-    
-}
-#container3-descripcion1{
-    
-   
-    font-size: 5rem;
-    font-weight: 800;
-    font-family: 'Roboto';
-     color: white;
-} 
-
-/* Contenedor que envuelve ambos textos */
-.text-wrapper {
-    position: relative; /* Permite posicionar los elementos hijos de manera absoluta */
-    width: 100%; /* Ajusta el ancho según sea necesario */
-    height: 100%; /* Ajusta la altura según sea necesario */
-}
-
-/* Texto de fondo en rojo */
-.background-text {
-    position: absolute;
-    top: 3rem;
-    left: 8rem;
-    width: 100%;
-    height: 100%;
-    color: rgba(216, 171, 36, 0.853); /* Color del texto de fondo */
-    font-size: 10rem; /* Tamaño del texto, ajusta según sea necesario */
-    font-weight: 400; /* Grosor del texto */
-    font-family: "Norican", cursive;
-    z-index: 1; /* Asegura que esté detrás del texto principal */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.112); /* Opcional: sombra para mejor visibilidad */
-    /* Alinea el texto dentro del contenedor */
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-/* Texto en primer plano en blanco */
-.foreground-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white; /* Color del texto en primer plano */
-    font-size: 5rem; /* Asegúrate de que coincida con el tamaño del texto de fondo */
-    font-weight: 800; /* Asegúrate de que coincida con el grosor del texto de fondo */
-    font-family: 'Roboto', sans-serif; /* Asegúrate de que coincida con la fuente del texto de fondo */
-    z-index: 2; /* Asegura que esté encima del texto de fondo */
-    /* Alinea el texto dentro del contenedor */
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background-image: url('images/fondo-pantalla.png');
 }
 
 
 
-
-
-/* Estilo para la imagen de WhatsApp */
-.whatsapp-icon {
-    position: fixed; /* Fija la posición respecto a la ventana del navegador */
-    bottom: 20px; /* Espacio desde la parte inferior */
-    left: 20px; /* Espacio desde el lado izquierdo */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
-}
-
-.whatsapp-icon img {
-    width: 8rem; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto; /* Mantén la proporción de la imagen */
-    border-radius:10%; /* Opcional: haz la imagen redonda */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra */
-    cursor: pointer; /* Opcional: cambia el cursor para indicar que es clicable */
-}
-
-.whatsapp-icon img:hover {
-    opacity: 0.8; /* Opcional: agrega un efecto de hover */
+#barra-navegador{
+    padding-bottom: 0.1rem;
+    background-color: rgba(163, 106, 31, 0) !important;
 }
 
 
-
-#cuerpo2{
-    margin-top: 4rem;
-    align-items: end;
-    padding-right: 4REM;
-    padding-left: 4REM;
-    justify-content: center;
-    text-align: center;
+#barra-navegador-fondo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:#262524;
 }
 
-#cuerpo2-contenedor1-d3{
+#titulo-barra{
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 2rem;
-}
-
-#cuerpo2-contenedor1-d1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5REM;
-}
-
-#cuerpo2-contenedor1{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-#cuerpo2-contenedor2{
-    border: 8px solid #AE8341; /* Borde rojo de 2px */
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-#cuerpo2-contenedor3{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-
-
-
-#cuerpo2-contenedor1-d3-s1{
-    color: rgb(28, 28, 28);
-    line-height: 0.2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5REM;
-}
-
-#cuerpo2-contenedor1-d3-s1 img{
-    margin-right: 1rem;
-}
-
-#cuerpo2-contenedor1-d3-s2 img{
-    margin-right: 1rem;
-}
-
-.background-text2 {
-    font-family: "Marck Script", cursive;
-    position: absolute;
-    top: 1rem;
-    transform: scaley(1.5); 
-    font-size:6rem;
-    color: rgba(216, 171, 36, 0.559); /* Color del texto de fondo */
-    z-index: -1;
-    white-space: nowrap;
-}
-
-
-
-
-
-
-#cuerpo2-contenedor1-d3-s2{
-    color: rgb(28, 28, 28);
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 0.2rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5REM;
-}
-
-#cuerpo2-contenedor1-d4{
-    width: fit-content;
-    border: 4px solid #AE8341; /* Borde rojo de 2px */
-    border-radius: 0;      /* Bordes cuadrados (sin redondeo) */
-    padding: 20px;  
-    justify-content: center;
-    color: rgb(18, 17, 17);
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 0.2rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5REM;
-}
-#cuerpo2-contenedor1-d5{
-    background-color: black;
-    width: fit-content;
-       /* Bordes cuadrados (sin redondeo) */
-    padding: 20px;  
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 0.2rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5REM;
-}
-
-
-
-
-
-
-
-
-#cuerpo3{
-    margin-top: 8rem;
-}
-
-
-#c3-descripcion1{
-  
-    width: fit-content;
-       /* Bordes cuadrados (sin redondeo) */
-
-    justify-content: center;
-    color:#AE8341;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 0.2rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 1.5REM;
-}
-
-
-
-#c3-descripcion2{
-  
-    width: fit-content;
-
-    justify-content: center;
+    font-size: 1.4REM;
     color:#ffffff;
-    font-size: 4rem;
-    font-weight: 700;
-   line-height: 3.5rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 4REM;
 }
 
-
-#c3-descripcions{
-    padding-top: 6rem;
-}
-
-#c3-descripcion3{
-  
-    width: fit-content;
-    text-align: start;
-    color:#ffffff;
-    font-size: 0.8rem !important;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 4REM;
-}
-
-
-
-#c3-descripcion{
-    padding-top: 4rem;
-    background-color: black;
-    text-align: center;
-    justify-content: center;
-}
-
-
-#botoncito1{
-    padding-bottom: 1REM;
-    padding-top: 1REM;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    padding-right: 2.5rem;
-     padding-left: 2.5rem;
-        border-radius: 0;
-        border: 5px solid #AE8341;
-        color: rgb(255, 255, 255) !important;
-        background: rgb(0, 0, 0);
-    
-}
-
-
-
-.background-text3 {
- line-height: 3rem;
-    font-family: "Marck Script", cursive;
-    position: absolute;
-    left: 1rem;
-   top: 3rem;
-    transform: scaley(3); 
-    font-size:7rem;
-    color: rgba(216, 171, 36, 0.204); /* Color del texto de fondo */
-    white-space: nowrap;
-}
-
-
-
-.cuerpo4{
-    padding-top: 8rem;
-}
-
-
-
-#c4-c1-servicios{
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    color: rgb(37, 36, 36);
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 0.2rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 8rem;
-    text-align: center;
-}
-
-#c4-contenedor1{
-    margin-bottom: 7rem;
-}
-
-
-
-
-
-.background-text4{
- line-height: 3rem;
-    font-family: "Marck Script", cursive;
-    position: absolute;
-    
-     top: 6rem;
-    transform: scaley(3); 
-    font-size:5rem;
-    color: rgba(216, 171, 36, 0.93); /* Color del texto de fondo */
-    white-space: nowrap;
-}
-
-
-#c4-servicio1{
-    margin-top: 2rem;
-    padding:2rem ;
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    background-image: url('images/servicio2.jpg');
-}
-
-#c4-servicio2{
-    margin-top: 2rem;
-    padding:2rem ;
-    background-size: 100% 100%;
-  
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    background-image: url('images/servicio3.jpg');
-}
-
-#c4-servicio3{
-    margin-top: 2rem;
-    padding:2rem ;
-    background-size: 100% 100%;
-    align-items: center;
-    display: flex;
-    background-image: url('images/servicio4.jpg');
-}
-
-#c4-servicio4{
-    margin-top: 2rem;
-    padding:2rem ;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    background-image: url('images/servicio1.jpg');
-}
-
-#c4-servicio5{
-    margin-top: 2rem;
-    padding:2rem ;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    background-image: url('images/servicio5.jpg');
-}
-
-#c4-s1-texto1{
-    background-color: rgba(0, 0, 0, 0.645);
-    width: fit-content;
-    border: 5px solid rgb(223, 165, 5) ;
-    align-items: center;
-    font-size: 2rem;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    padding: 5rem;
-}
-
-
-#row-listaproductos3{
-    padding-top: 11rem;
-}
-
-
-
-
-
-
-
-
-.cuerpo5{
-    margin-top: 12rem;
-}
-
-
-
-
-.background-text5{
-    line-height: 3rem;
-       font-family: "Marck Script", cursive;
-       position: absolute;
-        top: 1rem;
-       transform: scaley(1.5); 
-       font-size:7rem;
-       color: rgba(216, 171, 36, 0.711); /* Color del texto de fondo */
-       white-space: nowrap;
-       z-index: -1;
-   }
-
-
-   #c5-reseña1{
-    margin-top: 8rem;
-   }
-   
-
-   #c5-reseña2{
-    margin-top: 8rem;
-   }
-
-   #c5-reseña3{
-    margin-top: 8rem;
-   }
-
-   #c5-reseña4{
-    margin-top: 8rem;
-   }
-
-   #c5-reseña5{
-    margin-top: 8rem;
-   }
-
-   #c5-reseña{
-    color:black;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 2rem;
-   }
-
-
-   .carousel-item {
-    transition: transform 2s ease, opacity 1s ease-out; /* Cambia los valores según tus necesidades */
-  }
-
-   
-
-   #estrellas{
- 
-    display: flex;
-    justify-content: center;
-   }
-
-   #c5-reseña-cliente{
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    color:black;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 2rem;
-   }
-   
-
-
-
-
-   .cuerpo6{
-    margin-top: 8rem;
-   }
-
-
-#c6-contenedor{
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url('images/servicio1.jpg');
-}
-
-#c6-contenedor-d{
-    padding-bottom: 4rem;
-    padding-top: 4rem;
-    background-color: rgba(0, 0, 0, 0.652);
-}
-
-
-#c6-contenedor-d1{
-    text-align: center;
-    line-height: 4rem;
-    font-weight: 700;
-   
-    font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
-    margin-top: 4rem;
-    color: white    ;
-}
-
-#c6-contenedor-d2{
-    font-style:oblique;
-    margin-top: 3rem;
-    text-align: center;
-    line-height: 2rem;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    
-    color: white    ;
-}
-
-
-#cuerpo7{
-    padding-left: 2rem;
-    background-image: url('images/imagen1.jpg');
-    margin-top: 7rem;
-}
-
-
-#row-c7{
-    padding-left: 2rem;
-    background-color: rgba(27, 16, 4, 0.884);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-
-#c7-inicio{
-    padding-top: 4rem;
-}
-
-
-
-
-#c7-titulo1{
-    
-    line-height: 4rem;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
-    color: white;
-}
-
-#c7-i2-t2{
-    color: white;
-}
-
-#c7-footer{
-    align-items: center;
-    margin-top: 2rem;
-}
-
-
-
-#c7-titulo2{
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    color:#AE8341
-}
-
-
-
-#c7-titulo3{
-    margin-top: 2rem;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
-    color:#ffffff
-}
-
-
-
-
-#c7-i2-t1{
-    margin-top: 3rem;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-}
-
-
-#c7-inicio2{
-    text-align: center;
-}
-
-#c7-dieñador{
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    color: white;
-}
-
-#cuerpo8{
-    margin-top: 4rem;
-  
-    padding-right: 4REM;
-    padding-left: 4REM;
-    justify-content: center;
-    text-align: center;
-}
-
-.container.d-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-#c8-servicio {
-    font-size: 1.1rem;
+#opciones-barra{
+    font-size: 1.2rem;
+    font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    color: black;
-   width: fit-content;
-    position: relative;
+    color: rgb(160, 159, 159) !important;
 }
 
 
-
-#c82-servicio {
-    font-size: 1.1rem;
+#opciones-barra2{
+    font-size: 1.2rem;
+    font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    color: black;
-   width: fit-content;
-    position: relative;
-}
+    color: rgb(160, 159, 159) !important;}
 
-#c83-servicio {
-    font-size: 1.1rem;
+#opciones-barra3{
+    font-size: 1.2rem;
+    font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    color: black;
-   width: fit-content;
-    position: relative;
+    color: rgb(123, 121, 121) !important;
 }
 
-
-
-
-.container#c8-precio {
-    text-align: right;
- /* Ajusta el ancho según tus necesidades */
+.navbar-toggler{
+    background-color: rgb(255, 255, 255) !important;
 }
 
-
-#c8-contenedor1 {
-    border: 2px solid rgba(97, 97, 97, 0.188);
-    margin-right: 1rem;
-    box-shadow: 1px 1px 2px 2px rgba(84, 84, 84, 0.256); /* Sombra suave */
-    transition: background-color 0.3s ease, background-image 0.3s ease;
-}
-
-
-#c8-contenedor2 {
-    border: 2px solid rgba(97, 97, 97, 0.188);
- 
-    box-shadow: 1px 1px 2px 2px rgba(84, 84, 84, 0.256); /* Sombra suave */
-    transition: background-color 0.3s ease, background-image 0.3s ease;
-}
-
-
-#c8-contenedor3 {
-    border: 2px solid rgba(97, 97, 97, 0.188);
- 
-    box-shadow: 1px 1px 2px 2px rgba(84, 84, 84, 0.256); /* Sombra suave */
-    transition: background-color 0.3s ease, background-image 0.3s ease;
-}
-
-
-.text-white {
-    color: white !important;
-}
-
-/* Estilo cuando se pasa el cursor */
-.background-white {
-    background-size:  120% 100%;
-  background-image: url('images/precio1.jpg');
-   background-color: rgba(0, 0, 0, 0.689) !important;
-}
-
-
-.background-white2 {
-    background-size:  120% 100%;
-  background-image: url('images/precio2.jpg');
-   background-color: rgba(0, 0, 0, 0.689) !important;
-}
-
-
-
-.background-white3 {
-    background-size:  120% 100%;
-  background-image: url('images/precio3.jpg');
-   background-color: rgba(0, 0, 0, 0.689) !important;
-}
-
-
-
-
-
-
-#c8-precio{
-    width: fit-content;
-    font-weight: 700;
-    color: #AE8341;
-}
-
-#c82-precio{
-    width: fit-content;
-    font-weight: 700;
-    color: #AE8341;
-}
-
-
-#c83-precio{
-    width: fit-content;
-    font-weight: 700;
-    color: #AE8341;
-}
-
-
-
-.d-flex {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.d-flex .service {
-    flex: 1;
-    white-space: nowrap; /* Prevents the text from breaking */
-}
-.d-flex #c8-puntos {
-    flex: 1;
-    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
-    background-size: 10px 1px; /* Adjust the size of the dots */
-    background-repeat: repeat-x;
-    height: 1px; /* Adjust the height of the line */
-    margin: 0 10px; /* Spacing between service and price */
-}
-
-#c82-puntos {
-    flex: 1;
-    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
-    background-size: 10px 1px; /* Adjust the size of the dots */
-    background-repeat: repeat-x;
-    height: 1px; /* Adjust the height of the line */
-    margin: 0 10px; /* Spacing between service and price */
-}
-
-#c83-puntos {
-    flex: 1;
-    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
-    background-size: 10px 1px; /* Adjust the size of the dots */
-    background-repeat: repeat-x;
-    height: 1px; /* Adjust the height of the line */
-    margin: 0 10px; /* Spacing between service and price */
-}
-
-
-
-
-
-.c8-puntos-blancos {
-    flex: 1;
-    background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 50%, transparent 100%) !important;
-    background-size: 10px 1px; /* Adjust the size of the dots */
-    background-repeat: repeat-x;
-    height: 1px; /* Adjust the height of the line */
-    margin: 0 10px; /* Spacing between service and price */
-}
-
-.c83-puntos-blancos {
-    flex: 1;
-    background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 50%, transparent 100%) !important;
-    background-size: 10px 1px; /* Adjust the size of the dots */
-    background-repeat: repeat-x;
-    height: 1px; /* Adjust the height of the line */
-    margin: 0 10px; /* Spacing between service and price */
-}
-
-.c82-puntos-blancos {
-    flex: 1;
-    background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 50%, transparent 100%) !important;
-    background-size: 10px 1px; /* Adjust the size of the dots */
-    background-repeat: repeat-x;
-    height: 1px; /* Adjust the height of the line */
-    margin: 0 10px; /* Spacing between service and price */
-}
-
-.d-flex .price {
-    white-space: nowrap; /* Prevents the text from breaking */
-}
-
-
-#c8-c1-servicio{
-    margin-top: 2rem;
-}
-
-#c82-c1-servicio{
-    margin-top: 2rem;
-}
-
-
-#c83-c1-servicio{
-    margin-top: 2rem;
+.nav-item{
+    margin-left: 10rem;
 }
 
 
@@ -925,287 +67,812 @@ align-items: center;
 
 
 
-@media (max-width: 600px) {
-
-    #c82-precio{
-        text-align: right;
-        margin-top: 0;
-        font-size: 0.8rem;
-        width: fit-content;
-        font-weight: 700;
-        color: #AE8341;
-    }
-
-    #c83-precio{
-        text-align: right;
-        margin-top: 0;
-        font-size: 0.8rem;
-        width: fit-content;
-        font-weight: 700;
-        color: #AE8341;
-    }
-
-    #c8-contenedor2 {
-        margin-right: 1rem;
-        margin-left: 0rem;
-        margin-top: 2rem;
-    }
-
-
-  
-    #c82-servicio{
-        margin-top: 0;
-        font-size: 0.8rem;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-    }
-
-    #c83-servicio{
-        margin-top: 0;
-        font-size: 0.8rem;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-    }
-
-
-    #c82-c1-servicio{
-        margin-top: 0rem;
-    }
-
-
-    #c83-c1-servicio{
-        margin-top: 0rem;
-    }
-    
-    #c83-servicio{
-        font-size: 0.8rem;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-    }
-    
-    
-
-    #c8-contenedor3 {
-        margin-top: 2rem;
-        margin-right: 1rem;}
-
-
-    #c8-c1-servicio{
-        font-size: 0.8rem;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-    }
-
-    #c8-servicio {
-        margin-top: 0.2rem;
-        font-size: 0.8rem;}
-
-
-    #cuerpo8 {
-        margin-top: 4rem;
-        padding-right: 1REM;
-        padding-left: 2rem;}
-
-    #c4-s1-texto1{
-        font-size: 1.8rem;
-        width: 90%;
-        padding: 1rem;
-    }
-
-    #row-listaproductos3{
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 0rem !important;
-    }
-
-#c4-c1-servicios{
-    font-size: 2rem;
-    line-height: 2rem;
-}
-
-    .background-text4{
-        display: none;
-    }
-
-    #c3-descripcion3 {
-        text-align: center;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-
-    #c3-descripcion2{
-        font-size: 1.5rem;
-    }
-.background-text3{
-    display: none;
-}
-
-    #cuerpo2-contenedor2{
-        margin-right: 1rem;
-    margin-left: 1rem;
-    }
-
-
-    #cuerpo2-contenedor1-d3{
-        margin-bottom: 0rem;
-    }
-
-
-#cuerpo2-contenedor1-d1{
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 2rem;
-}
-    
-    
-    #cuerpo2{
-        margin-top: -5rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    .background-text2{
-        display: none;
-    }
-
-
-    #cuerpo2-contenedor1-d3-s1{
-        margin-bottom: 1rem;
-        line-height: 1rem;
-    }
-
-
-    #cuerpo2-contenedor1-d3-s2{
-        line-height: 1rem;
-    }
 
 
 
 #cuerpo1{
-    margin-top: -8rem;
+    height: 90vh;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+    background-image: url("images/imagen2.jpg");
+    background-size: 100% 100%;
+    
 }
 
 
-    #container2-descripcion2{
-        font-size: 4rem !important;
-    }
-
-    #container1-descripcion2{
-        font-size: 4rem !important;
-    }
-
-    #container3-descripcion2{
-        line-height: 1rem;
-        font-size: 2.5rem !important;
-    }
-    
-
-
-    .background-text{
-        left: 0rem;
-    }
-#container1-descripcion1{
-   text-align: center;
-    font-size: 2rem;
-}
-    
-    
-#container1-cuerpo1{
-  background-repeat: no-repeat;
-   background-size:120% 50vh;
-}
-
-#container2-cuerpo1{
-    background-repeat: no-repeat;
-     background-size:100% 50vh;
-  }
-
-  
-  #container3-cuerpo1{
-    background-repeat: no-repeat;
-     background-size:120% 50vh;
-  }
-  
-
-
-.whatsapp-icon img{
+#cuerpo1-texto{
    
-    width: 6rem;
+}
 
+#cuerpo1-texto1{
+    line-height: 5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    text-align: start;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: "Montserrat", Sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+#cuerpo1-texto2{
+    text-align: left;
+    color: #fc84b4;
+    font-family: "Herr Von Muellerhoff", Sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.8rem;}
+
+    #cuerpo1-texto3{
+    align-self: center;
+    text-align: left;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    letter-spacing: 0.3px;
+    }
+
+
+    #cuerpo1a-oferta img{
+        width: 50%;
+
+    }
+
+#contenedor-boton{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+#boton1{
+    border-radius: 0;
+    font-size: 1.2rem;
+    width: 50%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", Sans-serif;
+    color: white;
+    margin-top: 1rem;
+    background-color:#e26295;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+#cuerpo1a-oferta1 img {
+    height: 12rem;
+    width: 15rem;
+}
+
+
+
+#cuerpo1a{
+    height: 95vh;
+    padding-bottom: 4rem;
+  
+    background-image: url("images/imagen2.jpg");
+    background-size: 100% 100%;
     
 }
 
 
-.whatsapp-icon {
-    left: 0;
+.carousel-indicators button {
+    background-color: #000000; /* Cambia el color del punto */
+    width: 20px !important; /* Cambia el tamaño del punto */
+    height: 20px !important;
+    border-radius: 50%; /* Asegura que sean circulares */
 }
 
-#container2-descripcion1{
+.carousel-indicators .active {
+    background-color: #ffcc00; /* Cambia el color del punto activo */
+}
+
+
+
+
+#acercadenosotros{
+    background-image: url('images/imagen3.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#cuerpo2{
+   margin-top: 0.1rem;
+    background-color: #edebeb0d;
+ 
+   
+}
+
+#cuerpo2-texto{
+ 
+    background-color: #000000aa;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+   
+}
+
+#cuerpo2-texto1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 6REM;
+    line-height: 5rem;
+    color: #e2bd17;
+}
+
+
+#cuerpo2-texto2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4REM;
+   
+    color: #f9f6fa;
+}
+
+
+
+#cuerpo2-texto3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2REM;
+   
+    color: #ffffff;
+}
+
+#boton-c2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+#servicios{
     text-align: center;
-    font-size: 2rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+
+#servicio1-texto{
+    text-align: start;
+    padding-top: 8rem;
+}
+
+#servicios-titulo1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:4REM;
+    color: rgb(62, 61, 61);
+}
+
+#servicios-titulo1::before{
+    border-radius: 0.2rem;
+    margin-bottom: 10px;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 5px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(214, 160, 21);
+    margin-right: 10px; /* Espacio entre la barra y el texto del h2 */
+  }
+
+#servicios-titulo2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:4REM;
+    color: rgb(214, 160, 21);
+}
+
+
+#servicios-titulo2::after{
+    margin-left: 1rem;
+    border-radius: 0.2rem;
+    margin-bottom: 10px;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 5px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color: gray;
+    margin-right: 10px; /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+
+
+
+
+#servicio1-imagen img{
+    width: 100%;
 }
 
 
 
-#container3-descripcion1{
+
+#servicios-texto1-1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:3REM;
+    color: rgb(62, 61, 61);
+}
+
+
+#servicios-texto1-2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size:3REM;
+    color: rgb(197, 169, 31);
+}
+
+
+#servicio1-texto2{
+    
+    line-height: 1rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    font-size:1REM;
+    color: rgb(94, 92, 92);
+}
+
+
+#servicio1-texto3{
+    line-height: 1.4rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 00;
+    font-size:1.2REM;
+    color: rgb(83, 82, 82);
+}
+
+
+
+#telefono{
+
+    padding-top: 1rem;
+    background-color: #0000008e;
     text-align: center;
-    font-size: 2rem;
+
 }
 
+
+#horario{
+    border-radius: 1rem;
+    border: 12px solid rgb(239, 162, 8);
+    padding-top: 1rem;
+    background-color: #0000008e;
+    text-align: center;
+    color: rebeccapurple;
+}
+
+#ubicacion{
+    padding-top: 1rem;
+    background-color: #0000008e;
+    text-align: center;
+   
+}
+
+#ubicacion-descripcion{
+    font-size: 1rem;
+}
+
+#horario-descripcion{
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+#telefono-imagen img{
+    width: 25%;
+}
+
+#telefono-descripcion{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#telefono-descripcion1{
+    color: #e2bd17;
+    font-size: 2.5rem;
+}
+
+#telefono-titulo{
+    font-size: 3rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+#contactanos{
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: url('images/imagen8.jpg');
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#contactanos-cuerpo-titulo{
+    text-align: center;
+    color: red;
+}
+
+#contactanos-cuerpo-titulo1{
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 700;
+font-size:3REM;
+color: rgb(255, 255, 255);
+}
+
+
+#contactanos-cuerpo-titulo2{
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 500;
+font-size:3REM;
+color: rgb(243, 189, 13);
+}
+
+
+
+#contactanos-cuerpo-titulo-d{
+    font-family: 'Josefin Sans', sans-serif;
+font-weight: 900;
+font-size:3REM;
+    color: rgb(255, 255, 255);
+}
   
 
-.bg-body-tertiary{
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+#ubicacion-llegar{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+    border-radius: 1REM;
+    padding-bottom: 0.5REM;
+    padding-top: 0.5REM;
+    width: 80%;
+    background-color: #1153f8;
 }
+
+
+#ubicacion-llegar-t{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+#ubicacion-llegar img{
     
-   .navbar-brand{
-    margin-left: 0rem !important;
-
-   }
-
-    #elemento-barra{
-        border: 0;
-    }
+   width: 2REM;
+}
 
 
-    .background-text5{
-        display: none;
-    }
 
-    #c5-reseña5{
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  .service-dots {
+    flex-grow: 1;
+    border-bottom: 1px dashed #000;
+    margin: 0 10px;
+  }
+  .service-name, .service-price {
+    white-space: nowrap;
+  }
+
+  #precios{
+    background-color: #F7F4E8;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    color: red;
+  }
+
+  #precios-imagenes{
+    display: flex;
+    display: inline-block
+    
+  }
+
+  #precios-imagenes img{
+   width: 25rem;
+    
+  }
+
+  #precios-contenedor1{
+    margin-right: 4rem;
+    margin-left: 4rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    
+  }
+
+  .service-item{
+    font-size: 1rem;
+    color:rgb(176, 107, 12) ;
+  }
+
+
+  #tratamiento{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+    background-image: url('images/imagen10.jpg'), url('images/imagen9.jpg');
+   
+  }
+
+  #tramiento-cuerpo{
+   
+    background-color: #040b0fa7;
+  }
+
+  #tramiento-descripcion img{
+width: 100%;
+  }
+
+
+  #tramiento-descripcion2{
+    
+    padding-top: 8rem;
+  }
+
+
+#tratamiento-fotos img{
+    margin-top: 2rem;
+    width: 25rem;
+}
+
+  #tratamiento-d-titulo2{
+    margin-top: 1rem;
+    font-weight: 800;
+    line-height: 4rem;
+    color: #ecd800;
+    font-size: 4rem;
+    font-family: "Montserrat", Sans-serif;
+    
+  }
+
+  #tratamiento-d-titulo1{
+    font-size: 1.4rem;
+    font-family: "Montserrat", Sans-serif;
+    margin-top: 4rem;
+  }
+
+  #tratamiento-d-titulo4{
+    font-weight: 600;
+    line-height: 4rem;
+    color: #2defdc;
+    font-size: 4rem;
+    font-family: "Montserrat", Sans-serif;
+    margin-top: 5rem;
+  }
+
+  #tratamiento-descripcion-imagen{
+    margin-top: 1rem;
+  }
+
+
+
+
+  #tratamiento-d-titulo{
+
+    line-height: 5rem;
+    margin-top: 2rem;
+   
+    text-align: start;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: "Montserrat", Sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+
+#whatsapp {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #25d366; /* Color de WhatsApp */
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del ícono */
+#whatsapp i {
+    color: white;
+    font-size: 24px;
+}
+
+/* Efecto al pasar el mouse por encima */
+#whatsapp:hover {
+    background-color: #20c057;
+}
+
+
+@media (max-width: 600px){
+
+    .service-item {
+       font-size: 0.8rem;
+      }
+
+    #servicio1-texto3{
+        line-height: 1.4rem;
         margin-top: 2rem;
+        font-family: "Montserrat", Sans-serif;
+        font-weight: 00;
+        font-size:1REM;
+        color: rgb(83, 82, 82);
+    }
+    
+
+    #cuerpo1a-oferta1 img {
+        /* margin-bottom: -5rem; */
+        height: 7rem;
+        width: 10rem;
     }
 
-    #c7-titulo3{
-       
-        line-height: 1.2rem;
+    #tramiento-cuerpo{
+        padding-bottom: 4rem;
     }
 
-    #c6-contenedor-d1{
-        line-height: 2rem;
+    #tratamiento-d-titulo2{
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    #tratamiento-d-titulo1{
         font-size: 1rem;
+    font-family: "Montserrat", Sans-serif;
+    margin-top: 2rem;
     }
 
-    #c7-i2-t1{
+    #tramiento-descripcion img{
+        height: 22rem;
+        margin-bottom: -4rem;
+        width: 100%;
+          }
+
+    #tratamiento-d-titulo4{
+
+        line-height: 1.5rem;
+        color: #2defdc;
+        font-size: 1.5rem;
+        font-family: "Montserrat", Sans-serif;
         margin-top: 1rem;
     }
 
+    
 
-    #c5-reseña {
-        line-height: 1.1rem;
-        font-size: 0.8rem;
+    #tramiento-descripcion {
+    padding-top: 4rem;
     }
 
-    #percentage{
+    #tramiento-descripcion2{
+        padding-top: 0rem;
+    }
+
+    #tratamiento-d-titulo {
+        line-height: 1.8rem;
+        margin-top: 2rem;
+        text-align: start;
+        font-size: 1.8rem;
+    }
+    #cuerpo1a-oferta img{
+        margin-bottom: -5rem;
+       height: 10rem;
+        width: 12rem;
+
+    }
+
+    #cuerpo1-texto3 {
+        margin-top: 1rem;
+        align-self: center;
+        text-align: left;
+        font-family: "Open Sans", Sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1rem;
+        letter-spacing: 0.3px;
+    }
+
+
+    #cuerpo1-texto2 {
+        text-align: left;
+        color: #fc84b4;
+        font-family: "Herr Von Muellerhoff", Sans-serif;
         font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+
+    
+    #precios{
+        padding-top: 4rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
+      }
+
+      #servicios-titulo1 {
+        line-height: 2rem;
+        font-size: 4rem !important;
+    }
+
+    #precios-contenedor1{
+       margin-left: 0rem;
+       margin-right: 0rem;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+       
+      }
+    
+
+    #contactanos-cuerpo-titulo1{
+        font-size: 2rem;
+        line-height: 1.5rem;
     }
 
 
-    #c7-titulo1{
-        font-size: 1.2rem;
+    #contactanos-cuerpo-titulo-d{
+        margin-bottom: 2rem;
+        color: #ffcc00;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 2rem;
     }
+
+    #contactanos-cuerpo-titulo2{
+        font-size: 2rem;
+        line-height: 1.5rem;
+    }
+
+    #servicio1-texto{
+        padding-top: 2rem;
+        margin-left: 0;
+    }
+
+#servicios-titulo1{
+    font-size: 2rem;
 }
 
+
+#servicios-titulo1::before{
+   
+    width: 1.5rem;
+  
+  }
+
+
+  #servicios-texto1-2 {
+  
+    font-size: 2rem;
+
+}
+
+
+#servicios-texto1-1 {
+  
+    font-size: 2rem;
+
+}
+
+
+  #servicios-titulo2::after{
+   
+    width: 1.5rem;
+  
+  }
+
+#servicios-titulo2{
+    font-size: 2rem;
+}
+
+
+
+
+#cuerpo2{
+    padding: 0 !important;
+}
+
+#cuerpo2-texto{
+    margin-left: 0rem;
+}
+
+
+#cuerpo2-texto1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+#cuerpo2-texto2{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+#cuerpo2-texto3{
+  
+    font-size: 1rem;
+}
+
+    .nav-item{
+        margin-left: 0rem;
+    }
+
+
+
+    
+#cuerpo1{
+    height:70vh;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-image: url("images/imagen9.jpg");
+    background-size: 130% 100%;
+    
+}
+
+    
+#cuerpo1a{
+    height: 70vh;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+    background-image: url("images/imagen13.png");
+    background-size: 100% 100%;
+}
+
+
+
+#cuerpo1-texto1{
+    line-height: 1.5rem;
+    margin-top: 0rem;
+   margin-left: 0rem;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+#boton1{
+    border-radius: 0;
+    font-size: 1rem;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    font-weight: 800;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin-top: 1rem;
+    background-color:#FC84B4
+}
+
+
+#contactanos{
+    background-size: 150% 100%;
+}
+    
+}
