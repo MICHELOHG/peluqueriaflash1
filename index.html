@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
@@ -122,8 +125,16 @@
         Peluqueria Flash
       </div>
 
+      <div class="container-fluid" id="cuerpo2-texto4">
+        Por Marta
+      </div>
+
+      <div class="container-fluid" id="cuerpo2-texto4-imagen">
+        <img src="images/imagen19.png" alt="">
+      </div>
+
       <div class="container-fluid" id="cuerpo2-texto2">
-       Madrid - 2009
+       Madrid - 2024
       </div>
 
       <div class="container-fluid" id="cuerpo2-texto3">
@@ -254,9 +265,9 @@
   </div>
 
 <div class="row col-md-12" id="precios-imagenes">
-  <img src="images/imagen14.png"  alt="">
-  <img src="images/imagen15.png"  alt="">
-  <img src="images/imagen14.png"  alt="">
+  <img src="images/imagen14.png" id="imagen1"  alt="">
+  <img src="images/imagen15.png" id="imagen2" alt="">
+  <img src="images/imagen14.png" id="imagen3" alt="">
   
 </div>
 
@@ -409,8 +420,12 @@
      Este tratamiento repara y nutre el cabello en profundidad gracias a su formulación con provitamina B5 y vitamina E. Los resultados se observan desde la primera aplicación. Su eficacia es de larga duración con los efectos visibles hasta después de 10 lavados. Es ideal para recuperar cabellos castigados o muy dañados que necesiten mejorar su apariencia y su salud. 
     </div>
     <div class="container" id="tratamiento-d-titulo2">
-      Ven a Nuestra Peluquería y pruebalo!
+      Reserva una cita!
     </div>
+
+    <div class="container" id="contenedor-boton">
+      <button type="button" class="btn btn-warning" id="boton1">Servicios</button>
+  </div>
 
   
   </div>  
@@ -418,12 +433,106 @@
 </div>  
 
 
+<div class="container-fluid" id="reseña">
+<div class="reseña titulo">
+  <span id="reseña-titulo1"> Nuestras</span> <span id="reseña-titulo2">Reseñas</span>
+
+
+  <div class="container-fluid col-md-8" id="reseñas">
+    <div id="reseñasCarrusel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#reseñasCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#reseñasCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#reseñasCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Reseña 1 -->
+        <div class="carousel-item active" id="carrusel">
+          <div class="reseña">
+            <div class="container-fluid" id="reseña-icono">
+              <img src="images/usuario.png" alt="">
+            </div>
+            <div class="container" id="estrellas">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+            </div>
+            <div class="container col-md-5" id="reseña1-comentario">
+              ¡No puedo recomendar Peluquería Flash lo suficiente! Desde que entré, el ambiente acogedor y profesional me hizo sentir como en casa. Marta y su equipo son verdaderos artistas.
+            </div>
+            <div class="container col-md-5" id="reseña1-cliente">
+              Max Power5
+            </div>
+          </div>
+        </div>
+        <!-- Reseña 2 -->
+        <div class="carousel-item" id="carrusel">
+          <div class="reseña">
+            <div class="container-fluid" id="reseña-icono">
+              <img src="images/usuario.png" alt="">
+            </div>
+            <div class="container" id="estrellas">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+            </div>
+            <div class="container col-md-5" id="reseña2-comentario">
+              ¡El servicio es increíble! Siempre tienen un trato impecable y el ambiente es muy acogedor. Sin duda, el mejor lugar para mi cabello.
+            </div>
+            <div class="container col-md-5" id="reseña2-cliente">
+              Jane Doe
+            </div>
+          </div>
+        </div>
+        <!-- Reseña 3 -->
+        <div class="carousel-item" id="carrusel">
+          <div class="reseña">
+            <div class="container-fluid" id="reseña-icono">
+              <img src="images/usuario.png" alt="">
+            </div>
+            <div class="container" id="estrellas">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+              <img src="images/estrella.png" height="50rem" alt="">
+            </div>
+            <div class="container col-md-5" id="reseña3-comentario">
+              ¡Un lugar fantástico! Cada vez que voy salgo más que satisfecha con los resultados. Marta y su equipo son increíbles.
+            </div>
+            <div class="container col-md-5" id="reseña3-cliente">
+              John Smith
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reseñasCarrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reseñasCarrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    
+  </div>
+
+
+</div>
+
+</div>  
 <div class="container-fluid" id="contactanos">
+  <div class="container-fluid" id="contactanos-contenedor">
   <div class="container-fluid" id="contactanos-cuerpo">
     <div class="container" id="contactanos-cuerpo-titulo">
       <div class="container" id="contactanos-cuerpo-titulo-p">
-      <span id="contactanos-cuerpo-titulo1">Información </span>
-      <span id="contactanos-cuerpo-titulo2">- Horarios </span>
+      <span id="contactanos-cuerpo-titulo1">Dirección </span>
+      <span id="contactanos-cuerpo-titulo2">- Contacto </span>
       </div>
 
       <div class="container" id="contactanos-cuerpo-titulo-d">
@@ -438,16 +547,14 @@
         <div class="container" id="telefono-imagen">
           <img src="images/telefono.png"  alt="">
         </div>
-        <div class="container" id="telefono-titulo">
-          Teléfonos
-        </div>
+       
 
         <div class="container" id="telefono-descripcion">
-          +34 <span id="telefono-descripcion1">  635857587</span>
+           <span id="telefono-descripcion1">  635857587</span>
         </div>
        
         <div class="container" id="telefono-descripcion">
-          +34 <span id="telefono-descripcion1">  917066454</span>
+          <span id="telefono-descripcion1">  917066454</span>
         </div>
        
        
@@ -461,9 +568,7 @@
           <div class="container" id="telefono-imagen">
             <img src="images/horario.png"  alt="">
           </div>
-          <div class="container" id="telefono-titulo">
-            Horario
-          </div>
+         
   
           <div class="container" id="horario-descripcion">
             LUNES 9:30 - 19:00
@@ -489,10 +594,7 @@
             <div class="container" id="telefono-imagen">
               <img src="images/ubiacion.png"  alt="">
             </div>
-            <div class="container" id="telefono-titulo">
-            Ubicacion  
-            </div>
-    
+          
             <div class="container" id="ubicacion-descripcion">
               C. de Blas Cabrera, 125, Latina 
             </div>
@@ -515,19 +617,148 @@
             </div> 
     </div>
   </div>
+</div>
   </div>
 
 
 
 
 
+
+
+<div class="row" id="galeria">
+  <div class="container-fluid" id="galeria-titulo">
+  <span id="reseña-titulo1"> Nuestra</span> <span id="reseña-titulo2">Galería</span>
+</div>
+<div class="container-fluid col-md-3" id="galeria-imagenes">
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Primera imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto1.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 1">
+      </div>
+      <!-- Segunda imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto2.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 2">
+      </div>
+      <!-- Tercera imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto3.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 3">
+      </div>
+      <!-- Cuarta imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto4.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 4">
+      </div>
+      <!-- Quinta imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto5.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 5">
+      </div>
+      <!-- Sexta imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto6.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 6">
+      </div>
+      <!-- Séptima imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto7.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 7">
+      </div>
+      <!-- Octava imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto8.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 8">
+      </div>
+      <!-- Novena imagen -->
+      <div class="col-4 mb-4">
+        <img src="images/foto9.jpg" class="img-fluid" id="imagen-galeria" alt="Imagen 9">
+      </div>
+    </div>
+    
+  </div>
 </div>
 
 
-
+<div class="container-fluid col-md-3" id="galeria-carrusel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      <!-- Primera imagen -->
+      <div class="carousel-item active" id="c-imagen">
+        <img src="images/imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <!-- Segunda imagen -->
+      <div class="carousel-item"id="c-imagen">
+        <img src="images/imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <!-- Tercera imagen -->
+      <div class="carousel-item"id="c-imagen">
+        <img src="images/imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+      </div>
+      <!-- Cuarta imagen -->
+      <div class="carousel-item" id="c-imagen"  >
+        <img src="images/imagen4.png" class="d-block w-100" alt="Imagen 4">
+      </div>
+    </div>
   
+    <!-- Controles anterior y siguiente -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"  id="prev-galeria"  aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next"type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"  id="next-galeria"  aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
 
+<div class="container-fluid col-md-3" id="galeria-imagenes">
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Primera imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 1">
+      </div>
+      <!-- Segunda imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 2">
+      </div>
+      <!-- Tercera imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 3">
+      </div>
+      <!-- Cuarta imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 4">
+      </div>
+      <!-- Quinta imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 5">
+      </div>
+      <!-- Sexta imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 6">
+      </div>
+      <!-- Séptima imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 7">
+      </div>
+      <!-- Octava imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 8">
+      </div>
+      <!-- Novena imagen -->
+      <div class="col-4 mb-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Imagen 9">
+      </div>
+    </div>
+  </div>
+</div>
 
+</div>  
 
 
 <script src="Script.js"></script>

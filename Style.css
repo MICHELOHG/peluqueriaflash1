@@ -5,7 +5,8 @@
     background-size: 100% 100%;
     overflow: hidden;
     color: white;
-
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
     justify-content: center;
     align-items: center;
     background-image: url('images/fondo-pantalla.png');
@@ -231,6 +232,18 @@
     color: #ffffff;
 }
 
+
+#cuerpo2-texto4{
+    font-family: "Herr Von Muellerhoff", Sans-serif;
+      font-size: 4rem;
+      color: #e26295;
+  }
+
+
+  #cuerpo2-texto4-imagen img{
+    width: 25rem;
+  }
+
 #boton-c2{
     display: flex;
     justify-content: center;
@@ -341,7 +354,7 @@
 
 
 #telefono{
-
+margin-bottom: 1rem;
     padding-top: 1rem;
     background-color: #0000008e;
     text-align: center;
@@ -350,8 +363,7 @@
 
 
 #horario{
-    border-radius: 1rem;
-    border: 12px solid rgb(239, 162, 8);
+   margin-bottom: 1rem;
     padding-top: 1rem;
     background-color: #0000008e;
     text-align: center;
@@ -359,7 +371,8 @@
 }
 
 #ubicacion{
-    padding-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
     background-color: #0000008e;
     text-align: center;
    
@@ -403,11 +416,13 @@
 
 
 #contactanos{
-    background-attachment: fixed;
-    background-size: 100%;
-    background-image: url('images/imagen8.jpg');
+   
+   
+}
+
+#contactanos-contenedor{
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    
 }
 
 #contactanos-cuerpo-titulo{
@@ -433,7 +448,7 @@ color: rgb(243, 189, 13);
 
 
 #contactanos-cuerpo-titulo-d{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 font-weight: 900;
 font-size:3REM;
     color: rgb(255, 255, 255);
@@ -614,7 +629,249 @@ width: 100%;
 }
 
 
+#reseña{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto  100%;
+    padding-right: 0.2rem;
+    background-image: url('images/imagen17.jpg');
+    padding-bottom: 15rem;
+    padding-top: 4rem;
+    text-align: center;
+    padding-left: 0.2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+#reseña-titulo1{
+    line-height: 1.4rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size:4REM;
+    color: rgb(83, 82, 82);
+
+}
+
+#reseña-titulo2{
+    line-height: 1.4rem;
+    margin-top: 2rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size:4REM;
+    color:#f5f2f3
+
+}
+
+#reseña1-comentario{
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+
+
+}
+
+
+
+#reseña-icono img{
+    width: 10rem;
+}
+
+#reseña1-cliente{
+    line-height: 1.4rem;
+    margin-top: 1rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size:1REM;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#reseña1-cliente::before{
+    height: 2px;
+   margin-bottom: 5px;
+    border-radius: 0.2rem;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 1rem;
+     /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(255, 255, 255);
+    /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+
+  #reseña1-cliente::after{
+    height: 2px;
+    margin-bottom: 5px;
+    border-radius: 0.2rem;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    margin-bottom: 5px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(255, 255, 255);
+    /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+  #reseña2-cliente{
+    line-height: 1.4rem;
+    margin-top: 1rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size:1REM;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#reseña2-cliente::before{
+    height: 2px;
+   margin-bottom: 5px;
+    border-radius: 0.2rem;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 1rem;
+     /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(255, 255, 255);
+    /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+
+  #reseña2-cliente::after{
+    height: 2px;
+    margin-bottom: 5px;
+    border-radius: 0.2rem;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    margin-bottom: 5px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(255, 255, 255);
+    /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+
+
+  #reseña3-cliente{
+    line-height: 1.4rem;
+    margin-top: 1rem;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size:1REM;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#reseña3-cliente::before{
+   margin-bottom: 5px;
+    border-radius: 0.2rem;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 2px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(255, 255, 255);
+    /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+
+  #reseña3-cliente::after{
+    margin-bottom: 5px;
+    border-radius: 0.2rem;
+    align-items: center;
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 2px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color:  rgb(255, 255, 255);
+    /* Espacio entre la barra y el texto del h2 */
+  }
+
+
+#galeria-carrusel{
+    margin-top: 4rem;
+}
+
+#carrusel{
+    height: 30rem;
+    padding-bottom: 4rem;
+}
+
+
+#next-galeria{
+    margin-bottom: 0rem;
+}
+
+#prev-galeria{
+    margin-bottom: 0rem;
+}
+
+#c-imagen img{
+    height: 20rem;
+}
+
+#imagen-galeria{
+    width: 5rem;
+    height: 5rem;
+}
+
+#galeria-titulo{
+    text-align: center;
+    padding-top: 4rem;
+}
+
+
 @media (max-width: 600px){
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        margin-bottom: 9rem;}
+
+#estrellas{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#estrellas img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+    #telefono-descripcion1{
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+    
+
+    #telefono-titulo{
+        font-size: 2rem;
+        font-family: "Montserrat", Sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    
+
+    #imagen1{
+        display: none;
+    }
+
+    #imagen2{
+        display: none;
+    }
+
+
+    #imagen3{
+        display: none;
+    }
 
     .service-item {
        font-size: 0.8rem;
@@ -646,8 +903,9 @@ width: 100%;
     }
 
     #tratamiento-d-titulo1{
+        line-height: 1.2rem;
         font-size: 1rem;
-    font-family: "Montserrat", Sans-serif;
+        font-family: 'Poppins', sans-serif;
     margin-top: 2rem;
     }
 
@@ -683,7 +941,7 @@ width: 100%;
         font-size: 1.8rem;
     }
     #cuerpo1a-oferta img{
-        margin-bottom: -5rem;
+        margin-bottom: -8rem;
        height: 10rem;
         width: 12rem;
 
@@ -726,29 +984,50 @@ width: 100%;
        margin-left: 0rem;
        margin-right: 0rem;
         padding-bottom: 4rem;
-        padding-top: 4rem;
+        padding-top: 0rem;
+     
        
       }
     
 
     #contactanos-cuerpo-titulo1{
-        font-size: 2rem;
-        line-height: 1.5rem;
+     color: #e26295;
+      font-size: 2rem;
+      margin-left: 1rem;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
     }
 
 
-    #contactanos-cuerpo-titulo-d{
-        margin-bottom: 2rem;
-        color: #ffcc00;
-        font-size: 2rem;
+    #contactanos-cuerpo-titulo2{
+        font-weight: 700;
+        font-size: 4rem;
         line-height: 2rem;
+        color:#43413e;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        
+    }
+
+
+    #contactanos-cuerpo-titulo-p{
+        
+        text-align: left !important;
+        font-size: 2.5rem;
+
+    }
+
+    #contactanos-cuerpo-titulo-d{
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 2rem;
+        color: #353533;
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         margin-top: 2rem;
     }
 
-    #contactanos-cuerpo-titulo2{
-        font-size: 2rem;
-        line-height: 1.5rem;
-    }
+   
 
     #servicio1-texto{
         padding-top: 2rem;
@@ -814,9 +1093,16 @@ width: 100%;
 }
 
 #cuerpo2-texto3{
-  
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
+
+#cuerpo2-texto4{
+    font-family: "Herr Von Muellerhoff", Sans-serif;
+      font-size: 4rem;
+      color: #e26295;
+  }
 
     .nav-item{
         margin-left: 0rem;
